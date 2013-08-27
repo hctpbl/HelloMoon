@@ -28,5 +28,15 @@ public class AudioPlayer {
 		
 		mPlayer.start();
 	}
+	
+	public void pause() {
+		if (mPlayer != null) {
+			if (mPlayer.isPlaying()) {
+				mPlayer.pause();
+			} else {
+				mPlayer.start();
+			}
+		}
+	}
 
 }
